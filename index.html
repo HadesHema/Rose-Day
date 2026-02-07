@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Rose Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Music -->
+<audio id="bgMusic" autoplay loop>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<div class="container">
+    <h1>🌹Happy Rose Day🌹</h1>
+    <h2 id="nameText">For Hema</h2>
+
+    <img src="rose.png" class="rose-img" id="rose">
+
+    <p>You are as beautiful as this rose...</p>
+
+    <button onclick="openLetter()">Open Love Letter</button>
+</div>
+
+<!-- Love Letter Popup -->
+<div class="popup" id="letterPopup">
+    <div class="popup-content">
+        <span class="close" onclick="closeLetter()">×</span>
+        <h2>My Love Letter</h2>
+        <p>
+            From the moment you came into my life,  
+            everything became more beautiful.  
+            Like a rose, you bring color, fragrance,  
+            and happiness to my world.  
+        </p>
+
+        <h3>Will you be mine? ❤️</h3>
+
+        <div class="proposal-buttons">
+            <button class="yes" onclick="accepted()">Yes</button>
+            <button class="no" id="noBtn">No</button>
+        </div>
+
+        <p id="resultText"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
